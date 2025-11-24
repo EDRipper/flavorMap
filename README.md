@@ -2,22 +2,27 @@
 
 ![office map thumbnail](https://hc-cdn.hel1.your-objectstorage.com/s/v3/ce6bbeda3d0d9f68e2fb4782877c955aab87580b_image.png)
 
-This codebase controls the map (including assets, bounding boxes and event triggers) for [flavortown](https://flavor-adventure.hackclub.com). 
+This codebase can host maps (including assets, bounding boxes and event triggers + scripts) for development, providing a playable link which can be uploaded to the main flavor town instance.
 
 Flavor Town / Work Adventure loads the map from a URL, in our case, https://hackclub.github.io/flavorMap/ (hosted with github pages. Changes to the Repo are automatically applied) 
 
-Eventually I intend to create a slack bot that will add custom assets into the map files. As of now feel free to PR. The map is in 32*32px, I recommend editing with the Tiled editor, as it handles tmj files well.
+The map is in 32*32px, I recommend editing with the Tiled editor, as it handles tmj files well.
 
 Work Adventure has good guidance on this: [https://docs.workadventu.re/map-building/tiled-editor/](https://docs.workadventu.re/map-building/tiled-editor/).
 
 For issues, questions or suggestions, DM me @EuanRipper on slack. (Don't tell me i pushed the .env, it is non sensitive!)
 
-## How to edit the map
+## How to Make your own house / edit a map
 
-Currently FlavourTown run the office.tmj file. Clone this repo and open the office.tmj file in Tiled (make sure it is within this repo, not an isolated file.)
+Clone this repo and open the office.tmj file in Tiled (make sure it is within this repo, not an isolated file.)
 
 When adding in any external assets, be sure to add them to the public images in this repo and embedd the tileset into the map, **this is important**.
 
+All basic map editing skills are well documented in [youtube tutorials:](https://www.youtube.com/watch?v=lu1IZgBJJD4&list=PL7jmrMKZfjCnz36FvezxJ-Tshuh3Zz-nc)
+
+Publish your fork on github and host with github pages.
+
+Message Euan Ripper to get your map linked in to the main flavor Town instance.
 
 ## Contribution Guidelines
 
@@ -28,8 +33,6 @@ When adding in any external assets, be sure to add them to the public images in 
 * *public/*: Static files like PDFs or audio files
 * *src/*: Scripts files or design source files
 * *tilesets/*: All PNG tilesets
-
--Your Pull request should include a screenshot of the change, along with a thorough explanation of changes made. It is very hard to identify changes made  by looking at the files in code, and there isn't version history in Tiled -please describe what you have done properly!
 
 > **Pro tips**
 > If you want to use more than one map file, just add the new map file in the root folder (I recommend creating a copy of *office.tmj* and editing it, in order to avoid any mistakes).  
