@@ -20,6 +20,13 @@ When adding in any external assets, be sure to add them to the public images in 
 
 All basic map editing skills are well documented in [youtube tutorials:](https://www.youtube.com/watch?v=lu1IZgBJJD4&list=PL7jmrMKZfjCnz36FvezxJ-Tshuh3Zz-nc)
 
+Always follow this file structure:
+
+* *public/*: Static files like PDFs or audio files
+* *src/*: Scripts files or design source files
+* *tilesets/*: All PNG tilesets
+
+
 Publish your fork on github and host with github pages.
 
 Message Euan Ripper to get your map linked in to the main flavor Town instance.
@@ -28,11 +35,7 @@ Message Euan Ripper to get your map linked in to the main flavor Town instance.
 
 -If you make a change that invalidates information in this README, update this README. 
 
--Always follow this file structure:
-
-* *public/*: Static files like PDFs or audio files
-* *src/*: Scripts files or design source files
-* *tilesets/*: All PNG tilesets
+-PRs welcome, just be a good egg.
 
 > **Pro tips**
 > If you want to use more than one map file, just add the new map file in the root folder (I recommend creating a copy of *office.tmj* and editing it, in order to avoid any mistakes).  
